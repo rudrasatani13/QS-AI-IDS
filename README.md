@@ -71,7 +71,7 @@ Isme classical ML/DL techniques ke saath-saath quantum-safe cryptography bhi int
   - Contribute more tests in `/tests` for robust code!
 
 - **View all files:**  
-  - [Browse the complete project on GitHub](https://github.com/rudrasatani13/Quantum-safe-AI-intrusuion-detection-system)
+  - [Browse the complete project on GitHub](https://github.com/rudrasatani13/QS-AI-IDS)
 
 - **Language:**  
   - Sari code aur documentation majorly English mein hai, but feel free to ask for Hinglish explanations anytime!
