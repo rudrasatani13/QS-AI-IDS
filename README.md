@@ -1,95 +1,101 @@
-# Quantum-safe AI Intrusion Detection System 🚦🛡️
+# QS-AI-IDS
 
-Aapka swagat hai in the **Quantum-safe AI Intrusion Detection System** repository!  
-Yeh project Python-based hai jo AI ke powerful models aur Quantum-Safe cryptography ko use karta hai to detect & prevent network intrusions — ekdum future-ready aur secure approach!
-
----
-
-## 🔧 Problem / Task :
-Build a network intrusion detection system (IDS) using AI, jo traditional aur quantum computing threats dono se secure ho.  
-Isme classical ML/DL techniques ke saath-saath quantum-safe cryptography bhi integrate ki gayi hai for log storage and communication.
+> **AI-Driven Intrusion Detection System** leveraging machine learning and network packet analysis.
 
 ---
 
-## 🧠 Explanation :
-- **AI-based Detection:** Deep Learning models monitor karte hain network traffic ko for any abnormal behavior ya malicious activity (jaise DDoS, port scanning, etc.)
-- **Quantum-safe Security:** Cryptographic modules ensure ki aapke logs aur sensitive communication quantum attacks ke against bhi safe rahe.
-- **Modular Design:** Code is split into various modules: core detection, cryptography, dashboard, monitoring, and logging — easily extendable structure!
-- **Web Dashboard:** Real-time monitoring & visualization ke liye responsive dashboard.
+## 📖 Overview
+**QS-AI-IDS** is a proof-of-concept Intrusion Detection System designed to classify and detect anomalous network behaviour using deep learning techniques. It processes live or captured network traffic, extracts features, and applies trained AI models to flag suspicious activities in real time.
 
----
+## ✨ Key Features
+- **Real-time Traffic Monitoring**  
+  Continuously captures network packets and analyzes them on the fly.
+- **Deep Learning Classifier**  
+  Utilizes neural networks (TensorFlow/PyTorch) to differentiate between benign and malicious traffic patterns.
+- **Modular Architecture**  
+  Easily extendable pipeline: packet capture → feature extraction → model inference → alerting.
+- **Customizable Alerts**  
+  Integrate with email, Slack, or logging systems to notify on detected threats.
+- **Scalability**  
+  Designed to handle high-throughput networks with multi-threaded capture and inference.
 
-## 💡 Solution (code structure):
+## 🛠️ Technology Stack
+| Component             | Technology          |
+|-----------------------|---------------------|
+| Packet Capture        | Scapy               |
+| Feature Extraction    | NumPy, Pandas       |
+| Model Training        | TensorFlow / PyTorch|
+| Visualization (Optional) | Matplotlib, Seaborn |
+| Packaging & Deployment| Docker              |
 
+## 🚀 Installation
+
+1. Clone the repository  
+   ```bash
+   git clone https://github.com/rudrasatani13/QS-AI-IDS.git
+   cd QS-AI-IDS
+   ```
+
+2. Create and activate a virtual environment  
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate    # Linux/macOS
+   venv\Scripts\activate       # Windows
+   ```
+
+3. Install dependencies  
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. (Optional) Build Docker image  
+   ```bash
+   docker build -t qs-ai-ids .
+   ```
+
+## ⚙️ Configuration
+- Review and modify parameters in `config.yaml`:  
+  - `capture.interface` – network interface to listen on  
+  - `model.path` – location of the serialized ML model  
+  - `alert.method` – notification channel (e.g., email, webhook)
+
+## ▶️ Usage
+
+- **Live Monitoring**  
+  ```bash
+  python src/main.py --config config.yaml
+  ```
+- **Offline Analysis**  
+  ```bash
+  python src/main.py --pcap data/sample_traffic.pcap --config config.yaml
+  ```
+
+## 🏗️ Project Structure
 ```
-.
-├── core/                # Main AI detection logic
-├── crypto/              # Quantum-safe cryptography modules
-├── dashboard/           # Web dashboard for live monitoring
-├── main.py              # CLI entry point for IDS
-├── main_web.py          # Web-based interface
-├── main_quantum_web.py  # Quantum-safe web mode
-├── moniter/             # Real-time network monitoring scripts
-├── run_as_root.py       # Root privilege handler (required for packet capture)
-├── scripts/             # Helper scripts (setup, utils, etc.)
-├── secure_logs/         # Encrypted log storage
-├── requirements.txt     # Python dependencies
-└── tests/               # Unit & integration tests
+QS-AI-IDS/
+├── src/
+│   ├── capture.py        # Packet capture logic
+│   ├── features.py       # Feature extraction routines
+│   ├── model.py          # Model loading & inference
+│   └── main.py           # Entry point
+├── config.yaml           # User configuration
+├── requirements.txt      # Python dependencies
+└── data/                 # Sample PCAP files
 ```
 
-- **Start/Run:**  
-  - CLI: `python main.py`  
-  - Web UI: `python main_web.py`  
-  - Quantum-safe mode: `python main_quantum_web.py`
+## 🤝 Contributing
+Contributions are welcome! Please follow these steps:
 
-- **Dependencies:**  
-  - Install all requirements:  
-    ```
-    pip install -r requirements.txt
-    ```
+1. Fork the repository  
+2. Create a feature branch (`git checkout -b feature/YourFeature`)  
+3. Commit your changes (`git commit -m "Add YourFeature"`)  
+4. Push to your fork (`git push origin feature/YourFeature`)  
+5. Open a Pull Request and describe your changes
 
-- **Log Folder:**  
-  - Secure logs stored in `/secure_logs` using quantum-safe encryption.
+## 📄 License
+This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
 
----
-
-## 📚 Reference (official docs):
-
-- Python: https://docs.python.org/3/
-- Quantum-safe cryptography (PyCryptodome/other): https://www.pycryptodome.org/src/installation
-- Scapy (Network packet processing): https://scapy.readthedocs.io/
-- Flask (Web dashboard): https://flask.palletsprojects.com/
-- Deep Learning (PyTorch/TensorFlow): https://pytorch.org/docs/ | https://www.tensorflow.org/api_docs
-
----
-
-## 🧑🏻‍💻 Other (suggestion for you) :
-
-- **Upgrade Ideas:**  
-  - Integrate more quantum-safe crypto algorithms (like lattice, hash-based, or code-based schemes).
-  - Expand anomaly detection using more advanced AI models (GANs, Transformers, etc.).
-  - Contribute more tests in `/tests` for robust code!
-
-- **View all files:**  
-  - [Browse the complete project on GitHub](https://github.com/rudrasatani13/QS-AI-IDS)
-
-- **Language:**  
-  - Sari code aur documentation majorly English mein hai, but feel free to ask for Hinglish explanations anytime!
-
----
-
-## 🙏 Contributing
-
-Pull requests, issues, aur suggestions sab welcome hain!  
-Aapko koi doubt ho ya improvement suggest karna ho, toh open an issue or PR.
-
----
-
-## License
-
-MIT License  
-See [LICENSE](LICENSE) for details.
-
----
-
-**Happy Hacking & Stay Secure! 🚀**
+## 📬 Contact
+- **Author:** Rudra Satani  
+- **Email:** rudrasatani13@example.com  
+- **GitHub:** [@rudrasatani13](https://github.com/rudrasatani13)
