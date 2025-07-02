@@ -1,0 +1,22 @@
+# QS-AI-IDS Configuration File
+
+# Model configuration
+model_type: "hybrid"          # Options: "classical", "hybrid", "quantum"
+threshold: 0.7                # Anomaly score threshold
+window: 5                     # Analysis window size (seconds)
+simulate: false               # Use simulated traffic if true
+
+# Network configuration
+interface: "en0"             # Network interface for live sniffing (Linux: eth0, wlan0, etc.)
+
+# Logging configuration
+logging:
+  log_file: "qsaiids.log"
+  log_level: "INFO"
+
+# Crypto configuration
+crypto:
+  kyber_key_path: "./keys/kyber.key"
+  dilithium_key_path: "./keys/dilithium.key"
+
+# Add more config options as needed

@@ -1,0 +1,24 @@
+2025-07-02 18:50:35,764 | INFO | Logging initialized.
+2025-07-02 18:50:35,765 | INFO | Simulation mode: False
+2025-07-02 18:50:35,765 | INFO | Monitoring interface: eth0
+2025-07-02 18:50:35,765 | INFO | Analysis window: 5s | Threshold: 0.7
+2025-07-02 18:50:35,765 | INFO | Selected model: hybrid
+2025-07-02 18:50:36,383 | INFO | Started network sniffer.
+2025-07-02 18:52:04,298 | INFO | Logging initialized.
+2025-07-02 18:52:04,298 | INFO | Simulation mode: False
+2025-07-02 18:52:04,298 | INFO | Monitoring interface: en0
+2025-07-02 18:52:04,298 | INFO | Analysis window: 5s | Threshold: 0.7
+2025-07-02 18:52:04,298 | INFO | Selected model: hybrid
+2025-07-02 18:52:04,846 | INFO | Started network sniffer.
+2025-07-02 18:55:46,926 | INFO | Logging initialized.
+2025-07-02 18:55:46,926 | INFO | Simulation mode: False
+2025-07-02 18:55:46,926 | INFO | Monitoring interface: en0
+2025-07-02 18:55:46,926 | INFO | Analysis window: 5s | Threshold: 0.7
+2025-07-02 18:55:46,926 | INFO | Selected model: hybrid
+2025-07-02 18:55:47,526 | INFO | Started network sniffer.
+2025-07-02 18:56:41,074 | INFO | Logging initialized.
+2025-07-02 18:56:41,074 | INFO | Simulation mode: False
+2025-07-02 18:56:41,074 | INFO | Monitoring interface: en0
+2025-07-02 18:56:41,074 | INFO | Analysis window: 5s | Threshold: 0.7
+2025-07-02 18:56:41,074 | INFO | Selected model: hybrid
+2025-07-02 18:56:41,665 | INFO | Started network sniffer.
