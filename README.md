@@ -83,14 +83,6 @@ QS-AI-IDS/
 └── data/                 # Sample PCAP files
 ```
 
-## 🤝 Contributing
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository  
-2. Create a feature branch (`git checkout -b feature/YourFeature`)  
-3. Commit your changes (`git commit -m "Add YourFeature"`)  
-4. Push to your fork (`git push origin feature/YourFeature`)  
-5. Open a Pull Request and describe your changes
 
 ## 📄 License
 This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
