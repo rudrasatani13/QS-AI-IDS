@@ -89,5 +89,5 @@ This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for d
 
 ## 📬 Contact
 - **Author:** Rudra Satani  
-- **Email:** rudrasatani13@example.com  
+- **Email:** rudrasatani@gmail.com
 - **GitHub:** [@rudrasatani13](https://github.com/rudrasatani13)
